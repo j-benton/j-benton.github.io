@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Jonathan Benton</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"
+                ><span class="d-block d-lg-none">Jonathan Benton</span><span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/me.jpg" alt="" /></span></a
+            ><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">Jonathan <span class="text-primary">Benton</span></h1>
+                    <div class="subheading mb-5">Atlanta, GA · <a href="mailto:jonathanmbenton@gmail.com">jonathanmbenton@gmail.com</a></div>
+                    <p class="lead mb-5">I am a detail-oriented creative who uses the tools of data science to provide business insights. Given my background as a cruise ship performer, I use my communication skills and adaptability to quickly assimilate to new systems and deliver clear, concise recommendations.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/j-benton/"><i class="fab fa-linkedin-in"></i></a><a class="social-icon" href="https://github.com/j-benton"><i class="fab fa-github"></i></a><a class="social-icon" href="https://medium.com/@jonathanmbenton/"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Projects-->
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Projects</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Worship Setlist Generator</h3>
+                            <div class="subheading mb-3">Capstone Project for General Assembly Data Science Immersive</div>
+                            <p>For this project, I created a locally hosted Flask application that recommended songs for church services based on user input. I used:
+                            <ul>
+                              <li>Python</li>
+                              <li>Requests</li>
+                              <li>BeautifulSoup4</li>
+                              <li>CountVectorizer</li>
+                              <li>spaCy</li>
+                              <li>VaderSentiment</li>
+                              <li>Flask</li>
+                              <li>HTML</li>
+                              <li>CSS</li>
+                            </ul>
+                            All code was written in Python, except for the portion of my Flask app that used HTML and CSS. Using Requests and BeautifulSoup4, I wrote code that scraped praisecharts.com and biblestudytools.com for song metadata/lyrics and biblical text, respectively. I then used the spaCy NLP library to tokenize, lemmatize, and vectorize all text data. Finally, I defined a function that took in four types of user input: Bible verses (e.g. "John 3:16"), sermon themes/keywords (e.g. "forgiveness"), set length (e.g. "5" songs), and the ratio of upbeat/slower songs. My function returned a setlist to user specifications with the songs containing lyrics most similar to the given Bible verses and sermon themes/keywords. <br><br>This project was inspired by my experience as a hired drummer for various churches and seeing the constant need for a way to efficiently construct worship setlists that supported and enhanced a given service's message.
+                              </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">July 2020</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">COVID-19 Twitter Sentiment Analysis</h3>
+                            <div class="subheading mb-3">Client/Group Project for General Assembly Data Science Immersive</div>
+                            <p>For this group project, my team analyzed the sentiments of tweets from across the U.S. to see if states' differing responses to COVID-19 affected Twitter users' attitudes. We used:
+                              <ul>
+                                <li>Python</li>
+                                <li>GetOldTweets3</li>
+                                <li>spaCy</li>
+                                <li>CountVectorizer</li>
+                                <li>VaderSentiment</li>
+                                <li>Matplotlib</li>
+                              </ul>
+                            We worked with GetOldTweets3 to get tweets from key cities in states with the most severe and least severe lockdown measures during most of April 2020. As a control, we also pulled tweets from the same cities and dates from 2019. We ended up with more than 700,000 tweets from twenty cities. We then used spaCy to process the text data and VaderSentiment for sentiment analyziz. Finally, we plotted the sentiments to identify trends and connections. However, tweet sentiments didn't seem to be affected by differences in statewide policies responding to COVID-19, nor did sentiments change much between 2019 and 2020.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2020</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">The West Wing vs. House of Cards</h3>
+                            <div class="subheading mb-3">NLP Project for General Assembly Data Science Immersive</div>
+                            <p>For this project, I used NLP and Reddit's Pushshift API to predict subreddit origin for posts from two subreddits: The West Wing and House of Cards. I used:
+                              <ul>
+                                <li>Python</li>
+                                <li>Requests</li>
+                                <li>BeautifulSoup4</li>
+                                <li>NLTK</li>
+                                <li>GridsearchCV</li>
+                                <li>Pipeline</li>
+                                <li>CountVectorizer</li>
+                                <li>TfidfVectorizer</li>
+                                <li>Logistic Regression</li>
+                                <li>Multinomial Naive Bayes</li>
+                              </ul>
+                              First I gathered 4000 posts from each subreddit, pulling 2000 both before and after Trump's election in 2016 for extra analysis (I wanted to predict not only which subreddit a post came from but also whether it was posted pre- or post-Trump). I then processed the data using the NLTK data, including tokenization, lemmatization, and removing stopwords. I then used both CountVectorizer and TfidfVectorizer with Logistic Regression, KNN, Multinomial Naive Bayes, and Binomial Naive Bayes models to see which performed most accurately. Logistic Regression (w/TfidfVec) and Multinomial NB (w/CountVec) were chosen.<br><br>
+
+                              I then trained and tested my two models on my processed text data and found that they predicted a post's subreddit origin with fairly high accuracy (~80%). However, I had intentionally left in dead-giveaway words like the actors'/characters' names. After removing those, accuracy dropped down to about 65% (average between the two), which was still above the baseline of 50%. My Trump analysis was unfruitful, with my models performing as well as the baseline.
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">May 2020</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-aws"></i></li>
+                        <li class="list-inline-item"><i class="fas fa-database"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-git"></i></li>
+                    </ul>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>Python
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>Pandas
+                        </li><li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>Matplotlib
+                        </li><li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>Seaborn
+                        </li><li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>Scikit Learn
+                        </li><li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>TensorFlow w/Keras
+                        </li><li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>spaCy
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>Have used: Spark, Scala, AWS, SQL, R, HTML, CSS
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Data Science Fellow</h3>
+                            <div class="subheading mb-3">General Assembly Data Science Immersive</div>
+                            <p>Completed 12-week, 720-hour Data Science immersive bootcamp, including 20 labs and 6 projects. I won our internal Kaggle competition predicting housing prices in Ames, IA, and my team won an in-class hackathon predicting income based on a person's profile info. <br><br>
+                            Other project included tracking tweet sentiments during the 2020 pandemic, predicting Reddit posts' subreddit origin, and my capstone project, for which I used NLP to create a worship setlist generator (i.e. recommendation system). <br><br> Skills learned include Python, Pandas, Jupyter Notebook, Machine Learning, Natural Language Processing, Scikit Learn, Neural Networks with Keras, Un / Supervised Learning, Web Scraping, SQL, Spark, Scala, AWS, and data visualization (Matplotlib and Seaborn).
+ </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">April 2020 - July 2020</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Southern New Hampshire University</h3>
+                            <div class="subheading mb-3">Bachelor of Arts</div>
+                            <div>Political Science</div>
+                            <p>GPA: 4.0</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Graduated 2017</span></div>
+                    </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Assistant Cruise Director/Entertainer</h3>
+                            <div class="subheading mb-3">American Queen Steamboat Company</div>
+                            <p>
+                              <ul>
+                              <li>Toured the St. Lawrence River, Lake Ontario, Lake Erie, Nova Scotia, and U.S. northeast</li>
+                              <li>Assisted Cruise Director with all aspects of guest satisfaction</li>
+                              <li>Performed daily musical sets, both solo and ensemble</li>
+                              <li>Delivered 30-min ports-of-call presentations and hosted activities</li>
+                            </ul></p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2019 - October 2019</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Proofreader</h3>
+                            <div class="subheading mb-3">REAL Marketing</div>
+                            <p><ul>
+                              <li>Proofread real estate marketing materials for grammar, data formatting, and design
+</li>
+                              <li>Edited content for special projects and company presentation</li>
+                            </ul></p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2018 - March 2019</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">District Intern</h3>
+                            <div class="subheading mb-3">Congressman Jim Costa (CA-16)</div>
+                            <p>
+                              <ul>
+                                <li>Wrote and edited congressional records honoring community members
+</li>
+                                <li>Researched legislation and wrote policy memos for district office
+</li>
+                                <li>Answered phones, greeted constituents, and served as staff support at local events
+</li>
+                              </ul>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2017 - November 2017</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Bartender/Manager-on-Duty</h3>
+                            <div class="subheading mb-3">Gustavo's</div>
+                            <p><ul>
+                              <li>Established rapport with customers and addressed all customer issues during shift
+</li>
+                              <li>Supervised shifts of up to a dozen servers/hostesses
+</li>
+                            </ul></p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">October 2014 - March 2017</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <p>I have been a musician for almost my entire life, and I still like to gig with friends on the weekends. When outdoors, I love hiking, kayaking, playing basketball, or even just walking around town. When indoors, I am addicted to chess (find me on lichess: "jbentonio") and I love reading old Russian literature and watching movies.</p>
+
+                </div>
+            </section>
+            <hr class="m-0" />
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
